@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SMART MIRROR</title>
+
+    <!-- VIEWPORT SIZING FOR ALL DEVICES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Copyright for Clock -->
+    <!-- AUTHOR -->
+  	<!-- <meta name="author" content="Tyler West"> -->
+
+  	<!-- DESCRIPTION -->
+  	<!-- <meta name="description" content="A simple digital clock built with html, css, and javascript.  It will give you the time of day in 12 hour format and the day of the week."> -->
+
+    <!-- CUSTOM EXTERNAL STYLESHEET -->
+  	<link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <!-- 시계 부분입니다. -->
+    <main>
+  		<!-- DAY OF THE WEEK -->
+  		<div class="days">
+
+  			<div class="day">
+  				<p class="sunday">sunday</p>
+  			</div>
+
+  			<div class="day">
+  				<p class="monday">monday</p>
+  			</div>
+
+  			<div class="day">
+  				<p class="tuesday">tuesday</p>
+  			</div>
+
+  			<div class="day">
+  				<p class="wednesday">wednesday</p>
+  			</div>
+
+  			<div class="day">
+  				<p class="thursday">thursday</p>
+  			</div>
+
+  			<div class="day">
+  				<p class="friday">friday</p>
+  			</div>
+
+  			<div class="day">
+  				<p class="saturday">saturday</p>
+  			</div>
+
+  		</div>
+  		<!-- CLOCK -->
+  		<div class="clock">
+  			<!-- HOUR -->
+  			<div class="numbers">
+  				<p class="hours"></p>
+  				<p class="placeholder">88</p>
+  			</div>
+
+  			<div class="colon">
+  				<p>:</p>
+  			</div>
+
+  			<!-- MINUTE -->
+  			<div class="numbers">
+  				<p class="minutes"></p>
+  				<p class="placeholder">88</p>
+  			</div>
+
+  			<div class="colon">
+  				<p>:</p>
+  			</div>
+
+  			<!-- SECOND -->
+  			<div class="numbers">
+  				<p class="seconds"></p>
+  				<p class="placeholder">88</p>
+  			</div>
+
+  			<!-- AM / PM -->
+  			<div class="am-pm">
+
+  				<!-- AM -->
+  				<div>
+  					<p class="am">am</p>
+  				</div>
+
+  				<!-- PM -->
+  				<div>
+  					<p class="pm">pm</p>
+  				</div>
+  			</div>
+
+  		</div><!-- END CLOCK -->
+
+  	</main>
+  	<!-- CUSTOM JAVASCRIPT STYLESHEET -->
+  	<script src="javascript/main.js"></script>
+    <!-- 시계부분 끝 -->
+
+    <div class="letter">
+      <h2 class="title">
+        스마트미러
+      </h2>
+
+      <p>
+        라즈베리를 활용한 스마트미러입니다. "알렉사" 라고 말해보세요!
+      </p>
+    </div>
+
+
+    <!-- 날씨 부분입니다. -->
+    <div class="weather">
+      <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="Seoul" data-label_2="WEATHER" data-days="3" data-theme="dark" >Seoul WEATHER</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+    </div>
+  <!-- 달력 부분입니다. -->
+   <div class="cal">
+     <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23000000&amp;src=ko.south_korea%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=Asia%2FSeoul" style="border:solid 1px #777" width="400" height="600" frameborder="0" scrolling="no"></iframe>
+   </div>
+  </body>
+
+
+
+
+</html>
